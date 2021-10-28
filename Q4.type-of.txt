@@ -1,0 +1,58 @@
+ 
+              "type of"
+ 
+ a) console.log(typeof(1));
+          
+		  output: number
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+		
+ b) console.log(typeof(1.1));
+ 
+          output: number
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+		  
+ c) console.log(typeof('1.1'));
+ 
+          output: string
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+ 
+ d) console.log(typeof(true));
+ 
+          output: boolean
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+		  
+ e) console.log(typeof(null));
+
+          output: object
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+ f) console.log(typeof(undefined));
+
+          output: undefined
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+ g) console.log(typeof([]));
+
+          output: object
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+ 
+ h) console.log(typeof({}));
+ 
+          output: object
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+ i) console.log(typeof(NaN));
+
+          output: number
+		  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+		  
