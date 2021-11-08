@@ -1,0 +1,7 @@
+
+     "SHOULD WE INCLUDE HTML , HEAD , BODY TAGS?"
+	 
+Most of the browser are capable of auto adding the optional tags (html ,head , body)
+but the auto adding during interpreter would not be as same as defining it explicitly 
+which might lead to confusion and increases the chances of unexpected delivery of our contents.
+so , aadding the tags explicitly is always better than omitting in order to get the desired output. 

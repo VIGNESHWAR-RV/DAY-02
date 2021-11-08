@@ -1,0 +1,61 @@
+
+     "THE WORKS INVOLVED WHILE LOADING WEBSITE IN BROWSER"
+	 
+As a overview , stuffs and things involved in loading a website includes
+     
+	 * DATA BINDING
+	 * PARSE/TREE/LAYOUT/PAINT
+	 * OPERATING SYSTEM AND JS-ENGINE
+	 
+PARSING
+  
+  * In HTML5 , parsing auto-complete the tages to make it run.
+  
+  * It tokenizes the HTML tags and convert it into DOM tree.
+  
+  * Parsing is halted by tags like <link>,<script>,<style> and slows depending depending on network latency..
+      <link>,<style> also halt javascript execution. 
+  
+  * Speculative parsing would look into the scripts,css,images etc...
+  
+  * CSS would be parsed into CSSOM tree.
+  
+
+RENDER TREE / FRAME TREE 
+
+  * The parsed HTML tree (DOM TREE) and CSS (CSS TREE) is combined to form render tree which has the complete information of what is displayed.
+  
+  * It includes multiple trees to ( RENDER OBJECTS , RENDER STYLES , RENDER LAYERS , LINEBOXES ).
+  
+  * It does not include non visual elements like HEAD , SCRIPT , TITLE and also contents hidden using display none.
+  
+  * In RENDER TREE , the BLOCK and INLINE-BOX are well distinguished.
+  
+
+LAYOUT 
+
+  * Its a recursive process which traverses the render tree , checks nodes position and size and lays out its chldren(sub categories).
+  
+  * Its an incremental process. RENDER TREE items will be marked as "DIRTY" themselves. Then the batch would traverse and find the DIRTY marked items inorder to layout.
+  
+  
+PAINT 
+
+  * Its takes the layed out render trees and create layers which is an incremental process and builds up over 12 phases for creating layers.
+  
+  * Layers created from RENDER OBJECTS contain informations of nodes,transparency,overflow,canvas,video etc.
+  
+  * It produces BITMAP from each layers which is transferred to GPU as texture. Finally , the textures are composited to form an final image to render to screen.
+  
+  
+  
+PERFORMS-INSIGHTS :
+ 
+  * Placing the script tags at bottom would enable parsing FASTER and UNINTERRUPTRD.
+   
+  * Reading all the layouts in one pass and writing would improve the performance than reading->writing->again reading->again writing.
+
+  * Inling critical CSS(most important BITMAPS) would improve the painting time 
+
+  * External javascript and css could halt the painting duration.  
+  

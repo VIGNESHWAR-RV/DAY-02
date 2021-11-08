@@ -1,0 +1,28 @@
+    
+	  "DIFFERENCE BETWEEN BROWSER JS(CONSOLE) AND NODEJS"
+	
+	BROWSER JS                               NODE JS
+	
+1.Its the JS present in the             Its the JS present in the
+  browser.                               server.
+ The browser JS does not                 And it has access to the file system.
+ have access to file system.
+  
+
+2.The browser has a specific           NodeJS has a ability to choose the environment.
+ javascript runtime
+environment  version.
+ 
+ 
+3.Browser JS wont support newer        It widely supports every javascript versions and 
+JS versions until the browser is        are very fast to adapt.
+updated to support.so Its little 
+slow to adapt.
+
+
+4.Direct execution of javascript       direct execution of javascript would worj in NODEJS.
+
+
+5.javascript files are sandboxed       Javascript files are not sandboxed in javascript. 
+ in browser JS.                        so , caution is important while executing scripts 
+                                         using NODE JS.

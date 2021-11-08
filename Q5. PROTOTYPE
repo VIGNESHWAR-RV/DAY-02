@@ -1,0 +1,13 @@
+
+     "PROTOTYPE"
+	 
+* PROTOTYPE contains pre-defined set of properties and methods for
+ datatypes like (string,number,array,object) in javascript which 
+ are accessible by those datatypes by default.
+ 
+* And also we can create our custom methods and properties by using 
+ prototype. ie We can create custom method for string prototype
+ and can use it for every string datatypes.
+* Prototypes will be useful when we use custom methods or properties for again
+ and again for same datatype in our code and also we can inherit methods &
+ properties from one to another of same datatypes.
